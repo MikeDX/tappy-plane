@@ -81,7 +81,7 @@ p=plane();
 sp=camera();
 scroll[0].camera=sp;
 
-while(!key(_space))
+while(!key(_space) && !mouse.left)
 timer[0]=0;
 timer[1]=0;
 frame;
@@ -129,7 +129,7 @@ taphint();
 
 while(demo==true)
 
-if(key(_space))
+if(key(_space)|| mouse.left)
 demo=false;
 timer[0]=0;
 timer[1]=0;
